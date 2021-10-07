@@ -92,9 +92,9 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
-reviews.push({name: 'Laila', rating: '5', feedback: 'this place is great! Delicious food, awesome atmosphere, would recommed!' })
+//reviews.push({name:'Brett', rating: '5', feedback: 'this place is great! Delicious food, awesome atmosphere, would recommed!' })
 
-console.log(reviews)
+//console.log(reviews)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that creates an object with name, rating, feedback, add the new review to the end of an array and returns the resulting array
@@ -116,11 +116,10 @@ Use the getReviewByIndex function below to do the following:
   3. The function should return the following string: "{name} gave the restaurant a {rating} star review, and their feedback was: {feedback}"
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review, and their feedback was: Beautiful atmosphere and wonderful vegan options!"
 */
-
 function getReviewByIndex(array, number) {
   return `${array[number].name} gave the restaurant a ${array[number].rating} star review, and their feedback was: ${array[number].feedback}`; 
  }
-
+ 
  console.log(getReviewByIndex(reviews, 4));
 
 
@@ -136,8 +135,9 @@ Use the getLastReview function below to do the following:
 */
 
 function getLastReview(array) {
-  return `${array[array.length-1].name} gave the restaurant a ${array[array.length-1].rating} star review, and their feedback was: ${array[array.length-1].feedback}`;
-
+    return `${array[array.length-1].name} gave the restaurant a ${array[array.length-1].rating} star review, and their feedback was: ${array[array.length-1].feedback}`;
+  } 
+  
 console.log(getLastReview(reviews));
 
 

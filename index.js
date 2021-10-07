@@ -16,10 +16,9 @@ The function should:
 */
 
 function createMenuItem(name, price, category){
-  const tacos = {name, price, category}
-  return tacos;
+  return {name, price, category};
 }
-createMenuItem('tacos', 8, 'Lunch');
+console.log(createMenuItem('tacos', 8, 'Lunch'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
@@ -30,9 +29,9 @@ Test your createMenuItems function by doing the following:
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
-console.log(createMenuItem('pizza', 5, 'lunch'));
-console.log(createMenuItem('pancakes', 10, 'breakfast'));
-console.log(createMenuItem('parmesan chicken', 6, 'dinner'));
+console.log(createMenuItem('pizza', 5, 'Lunch'));
+console.log(createMenuItem('waffles', 10, 'Brunch'));
+console.log(createMenuItem('chocolate milkshake', 6, 'Drinks'));
 
 
 
@@ -92,9 +91,9 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
-//reviews.push({name:'Brett', rating: '5', feedback: 'this place is great! Delicious food, awesome atmosphere, would recommed!' })
+reviews.push({name:'Brett', rating: '5', feedback: 'this place is great! Delicious food, awesome atmosphere, would recommed!' })
 
-//console.log(reviews)
+console.log(reviews)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that creates an object with name, rating, feedback, add the new review to the end of an array and returns the resulting array
@@ -106,6 +105,7 @@ Write a function that creates an object with name, rating, feedback, add the new
 */
 
 reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
+  console.log(reviews);
   
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.

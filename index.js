@@ -15,6 +15,7 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
+
 function createMenuItem(name, price, category){
   return {name, price, category};
 }
@@ -103,9 +104,13 @@ Write a function that creates an object with name, rating, feedback, add the new
   3. The function should push the following object to the array: {name: 'Daniela', rating: 5, review: 'Beautiful atmosphere and wonderful vegan options!' }
   4. should return the resulting array
 */
+function addReview(array, name, rating, feedback){
+  array.push({name: name, rating: rating, feedback: feedback });
+  return array;
+}
 
-reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
-  console.log(reviews);
+  
+console.log(addReview(reviews, 'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!'));
   
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
